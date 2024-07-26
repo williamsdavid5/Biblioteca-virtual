@@ -5,6 +5,12 @@ além disso, definição de uma fonte padrão*/
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+body {
+    background-image: url('/img/background.jpg');
+    background-size: 100vw 100vh;
 }
 
 /*anomação d entrada pela direita
@@ -75,6 +81,7 @@ button:hover {
     font-weight: bold;
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 button:active {

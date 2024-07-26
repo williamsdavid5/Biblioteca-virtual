@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    /*é importante que, ao definir margin auto para horizontal, 
+    que a largura do container pai seja definida*/
+    width: 650px;
+    height: 90vh;
+
+    /*
+    margin: 60px auto 0;
+    */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+/*definimos o posicionamento do div que contem o input e a imagem como relativo
+assim os elementos filhos irão levar em consideração o container em vez da pagina
+a pagina poderá ser posicionada como for, os filhos irão ser relativos ao container*/
+#pesquise {
+
+    height: 50px
+}
+
+input {
+    border-radius: 20px;
+    border: none;
+    padding: 8px 20px;
+    background-color: #21341E;
+    width: 600px;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: #9C9C9C;
+    font-weight: bold;
+}
+
+/*a imagem foi definida como posição absoluta
+ou seja, ela ficraá em uma posição fixa
+porém em relação ao container*/
+#pesquise img {
+    /*
+    position: absolute;
+    height: 23px;
+    right: 16px;
+    top: 12%;
+    */
+    position: relative;
+    height: 23px;
+    left: 565px;
+    top: -29px;
+
+}
+
+#pesquise img:active {
+    opacity: 0.6;
+}
+
+#pesquise img:hover {
+    cursor: pointer;
+}
+
+ul {
+    height: 75vh;
+    list-style-type: none;
+    overflow: auto;
+    width: 600px;
+
+}
+
+ul::-webkit-scrollbar {
+    width: 12px;
+}
+
+ul::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #21341E;
+    border-radius: 20px;
+}
+
+li {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 555px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 20px;
+}
+
+/*
+li:hover {
+    background-color: #cdffc6;
+    transition: background-color 0.2s ease;
+}
+*/
+.divLi {
+    position: relative;
+}
+
+.divLi label {
+    font-weight: bold;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.divLi label:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.divLi label:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.divLi .disponivel {
+    color: #2EA61C
+}
+
+.divLi .indisponivel {
+    color: #CC3300;
+}
+
+#moçaLivro {
+    position: fixed;
+    top: 10%;
+    right: 73%;
+    height: 80vh;
+    animation: entradaEsquerda 1.3s ease-in-out forwards, flutuar 3s ease-in-out infinite 1.3s;
+}
+
+#pilhaLivros1 {
+    position: fixed;
+    left: 74%;
+    top: 21%;
+    height: 80vh;
+    animation: entradaDireita 1.3s ease-in-out forwards, flutuar 3s ease-in-out infinite 1.3s;
+}

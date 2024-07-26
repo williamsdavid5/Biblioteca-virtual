@@ -1,14 +1,10 @@
-body {
-    background-image: url('/img/background.jpg');
-}
-
 #container {
     display: flex;
     justify-content: center;
     height: 100vh;
     flex-direction: column;
-    padding: 60px;
-    width: 800px;
+    padding: 80px;
+    width: 900px;
     animation: entradaEsquerda 1.3s ease-out;
 }
 
@@ -20,10 +16,8 @@ body {
 }
 
 img {
-    width: 850px;
-    height: auto;
+    height: 120vh;
     position: fixed;
-    left: 55%;
-    top: -8%;
+    left: 54%;
     animation: entradaDireita 1.3s ease-out forwards, flutuar 3s ease-in-out infinite 1.3s;
 }
