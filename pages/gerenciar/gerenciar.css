@@ -1,0 +1,229 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    /*é importante que, ao definir margin auto para horizontal, 
+    que a largura do container pai seja definida*/
+    width: 650px;
+    height: 90vh;
+
+    /*
+    margin: 60px auto 0;
+    */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+/*definimos o posicionamento do div que contem o input e a imagem como relativo
+assim os elementos filhos irão levar em consideração o container em vez da pagina
+a pagina poderá ser posicionada como for, os filhos irão ser relativos ao container*/
+#pesquise {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-bottom: 15px;
+    justify-content: left;
+}
+
+input {
+    border-radius: 20px;
+    border: none;
+    padding: 8px 20px;
+    background-color: #21341E;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#pesquise input {
+    border-radius: 20px;
+    border: none;
+    padding: 8px 20px;
+    background-color: #21341E;
+    width: 480px;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#pesquise button {
+    position: relative;
+    width: 120px;
+    font-size: small;
+    padding: 8px 20px;
+    border: none;
+    background-color: white;
+    color: #21341E;
+    margin: 0;
+}
+
+#container button {
+    position: relative;
+    top: 30px;
+    width: 120px;
+    font-size: small;
+    padding: 8px 20px;
+    border: none;
+    background-color: white;
+    color: #21341E;
+    margin: 0;
+    margin-left: auto;
+}
+
+input::placeholder {
+    color: #9C9C9C;
+    font-weight: bold;
+}
+
+/*a imagem foi definida como posição absoluta
+ou seja, ela ficraá em uma posição fixa
+porém em relação ao container*/
+#pesquise img {
+    /*
+    position: absolute;
+    height: 23px;
+    right: 16px;
+    top: 12%;
+    */
+    position: relative;
+    height: 23px;
+    left: -40px;
+    top: 5px;
+}
+
+#pesquise img:active {
+    opacity: 0.6;
+}
+
+#pesquise img:hover {
+    cursor: pointer;
+}
+
+ul {
+    height: 75vh;
+    list-style-type: none;
+    overflow: auto;
+    width: 600px;
+
+}
+
+ul::-webkit-scrollbar {
+    width: 12px;
+}
+
+ul::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #21341E;
+    border-radius: 20px;
+}
+
+li {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 555px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 20px;
+}
+
+/*
+li:hover {
+    background-color: #cdffc6;
+    transition: background-color 0.2s ease;
+}
+*/
+.divLi {
+    position: relative;
+}
+
+.divLi img {
+    height: 24px;
+    position: absolute;
+    right: 6%;
+    top: 20%;
+}
+
+.divLi img:hover {
+    cursor: pointer;
+}
+
+.divLi img:active {
+    opacity: 0.6;
+}
+
+.divLi #editar {
+    left: 85%;
+}
+
+#meninaLivros {
+    position: fixed;
+    left: 70%;
+    top: 8%;
+    height: 85vh;
+    animation: entradaDireita 1.3s ease-in-out forwards, flutuar 3s ease-in-out infinite 1.3s;
+}
+
+#pilhaLivros2 {
+    position: fixed;
+    top: 8%;
+    right: 70%;
+    height: 83vh;
+    animation: entradaEsquerda 1.3s ease-in-out forwards, flutuar 3s ease-in-out infinite 1.3s;
+}
+
+#confirma {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#confirma label {
+    color: black;
+}
+
+#confirmaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#confirmaContainer button {
+    background-color: #21341E;
+    color: white;
+    border: none;
+    font-size: small;
+}
+
+#confirmaContainer input {
+    width: 360px;
+}

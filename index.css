@@ -5,7 +5,9 @@
     flex-direction: column;
     padding: 80px;
     width: 900px;
+    /*
     animation: entradaEsquerda 1.3s ease-out;
+    */
 }
 
 #buttonsContainer {
