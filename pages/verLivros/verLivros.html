@@ -7,7 +7,6 @@
     <title>Ver livros</title>
     <link rel="stylesheet" href="../../global.css">
     <link rel="stylesheet" href="verLivros.css">
-    <script src="verLivros.js"></script>
 </head>
 
 <body>
@@ -17,86 +16,16 @@
     </div>
     <div id="container">
         <div id="pesquise">
-            <input type="text" placeholder="pesquise">
+            <input type="text" placeholder="pesquise" id="inputPesquisa" onchange="inputVazio()">
             <img src="/img/pesquisa.png" id="pesquisaImg" onclick="pesquisar()">
         </div>
         <div id="divLista">
             <ul id="lista">
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="disponivel" onclick="emprestar()">Disponível</label>
-                </div>
-                <div class="divLi">
-                    <li>primeiro livro</li>
-                    <label class="indisponivel" onclick="devolver()">Indisponível</label>
-                </div>
             </ul>
         </div>
     </div>
 </body>
+
+<script src="verLivros.js"></script>
 
 </html>
