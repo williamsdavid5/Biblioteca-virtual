@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciar livros</title>
     <link rel="stylesheet" href="../../global.css">
     <link rel="stylesheet" href="gerenciar.css">
@@ -15,6 +15,7 @@
         <img src="/img/meninaLivro.png" id="meninaLivros" alt="">
     </div>
     <div id="container">
+        <!-- Botão "Voltar" adicionado -->
         <button id="novoButton" onclick="novo()">Novo</button>
         <div id="pesquise">
             <input type="text" placeholder="pesquise" id="inputPesquisa" onchange="inputVazio()">
@@ -29,6 +30,7 @@
                 </div>
             </ul>
         </div>
+        <button id="voltar" onclick="window.location.href='../../index.html'">Voltar</button>
     </div>
 </body>
 <script src="gerenciar.js"></script>

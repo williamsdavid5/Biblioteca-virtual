@@ -1,3 +1,10 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -6,23 +13,36 @@ body {
 }
 
 #container {
-    /*é importante que, ao definir margin auto para horizontal, 
-    que a largura do container pai seja definida*/
     width: 650px;
     height: 90vh;
-
-    /*
-    margin: 60px auto 0;
-    */
     padding: 20px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-
+    justify-content: space-between; /* Espaço entre os elementos para posicionar o botão no final */
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
+    position: relative; /* Para posicionamento absoluto do botão */
 }
 
+#container #voltar {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    width: 120px;
+    cursor: pointer;
+    background-color: #21341E;
+    border: none;
+    text-align: center;
+    color: white; /* Define a cor do texto como branco */
+}
+
+#container #voltar:hover {
+    background-color: #2B4A2C;
+}
+
+#container #voltar:active {
+    opacity: 0.8;
+}
 /*definimos o posicionamento do div que contem o input e a imagem como relativo
 assim os elementos filhos irão levar em consideração o container em vez da pagina
 a pagina poderá ser posicionada como for, os filhos irão ser relativos ao container*/
