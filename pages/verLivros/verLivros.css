@@ -191,3 +191,15 @@ li:hover {
     border: none;
     font-size: small;
 }
+
+#voltar {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    width: 120px;
+    cursor: pointer;
+    background-color: #21341E;
+    border: none;
+    text-align: center;
+    color: white; /* Define a cor do texto como branco */
+}
