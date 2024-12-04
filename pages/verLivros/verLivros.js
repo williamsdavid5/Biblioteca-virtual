@@ -1,4 +1,5 @@
 
+let voltar = document.querySelector("#voltar");
 const livros = resgatarLivros();
 
 carregarLista();
